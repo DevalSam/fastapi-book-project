@@ -4,10 +4,6 @@ from typing import List, Optional
 
 app = FastAPI()
 
-# Root endpoint
-@app.get("/")
-async def root():
-    return {"message": "Welcome to FastAPI!"}
 
 # Book model
 class Book(BaseModel):
